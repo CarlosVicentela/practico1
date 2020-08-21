@@ -3,6 +3,25 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
+P {
   color: #00B7FF;
+}
+
+header {
+   background-color:#EAC926;
+}
+
+
+h4::before{
+	font-family:"Font Awesome 5 Free";
+	content:"\f4c0";
+  margin-right:8px;
+  padding: 1em 3px 30px 15px;
+}
+
+h3::after{
+  font-family:"Font Awesome 5 Free";
+	content:"\f291";
+  margin-right:8px;
+  padding: 1em 3px 30px 15px;
 }
