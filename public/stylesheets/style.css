@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "Roboto";
 }
 
 P {
@@ -24,4 +25,30 @@ h3::after{
 	content:"\f291";
   margin-right:8px;
   padding: 1em 3px 30px 15px;
+}
+
+#camioncito{
+   color:green
+}
+
+ul{
+  list-style: none;
+}
+ol{
+  list-style: none;
+}
+
+
+.precios { 
+   font-size: 18px;
+   color:black;
+}
+
+.descuentos { 
+  font-size: 16px;
+  color:green;
+}
+.descripciones { 
+  font-size: 16px;
+  color:black;
 }
