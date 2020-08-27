@@ -10,5 +10,12 @@ router.get('/clase1', function(req, res, next) {
   res.render('clase1');
 });
 
+router.get('/login', function(req, res, next) {
+  res.render('login');
+});
+
+router.get('/registro', function(req, res, next) {
+  res.render('registro');
+});
 
 module.exports = router;
