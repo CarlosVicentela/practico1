@@ -15,6 +15,9 @@ header {
    width: 100%;
  }
 
+#baners{
+  width:100%;
+}
 
 h4::before{
 	font-family:"Font Awesome 5 Free";
@@ -29,13 +32,22 @@ h3::after{
   margin-right:8px;
   padding: 1em 3px 30px 15px;
 }
+div.centrar{
+  margin: auto; 
+}
+.redondeado{
+  border-radius:15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .division{
   background:white
   ;
 }
 
-#camioncito{
+#camion{
+  padding-left: 40px;
    color:green
 }
 
@@ -68,4 +80,13 @@ ol{
 
 #color-icono{
   color: #217cdd;
+}
+
+#btnMenu{
+  text-align: center;
+  color: blue;
+  margin:auto;
+  height: 40px;
+  width:40px; 
+
 }
