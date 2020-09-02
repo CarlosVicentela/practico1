@@ -5,7 +5,20 @@ body {
   background: #ebebeb;
 }
 
-P {
+.container{
+  background: #ebebeb;
+}
+
+#banner{
+  width: 400px%;
+}
+
+#img{
+  width: 100%;
+  margin: auto;
+}
+
+·P {
   color: blackF;
   font-size:12px;
 }
@@ -16,7 +29,7 @@ header {
  }
 
 #baners{
-  width:100%;
+  widows: 400px;;
 }
 
 h4::before{
@@ -32,18 +45,10 @@ h3::after{
   margin-right:8px;
   padding: 1em 3px 30px 15px;
 }
-div.centrar{
-  margin: auto; 
-}
-.redondeado{
-  border-radius:15px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 .division{
-  background:white
-  ;
+  background:white ;
 }
 
 #camion{
@@ -82,11 +87,35 @@ ol{
   color: #217cdd;
 }
 
+#buscar{
+  margin-left: 5%;
+  height: 25px;
+  width: 40%;
+}
+
+
 #btnMenu{
   text-align: center;
   color: blue;
   margin:auto;
   height: 40px;
-  width:40px; 
+  width: 40px; 
+}
 
+/*  CSS para la pagina de Login   */
+div.centrar{
+   width: 100%;
+ }
+.redondeado{
+  width: 90%;
+  margin-left: 5%;
+  border-radius:5px;
+  text-align: left;
+  height: 30px;
+}
+#enviar{
+  width: 90%;
+  background: blue;
+  color: white;
+  text-align: center;
 }
