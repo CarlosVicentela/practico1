@@ -42,7 +42,7 @@ header {
   top: 0px;
 }
 
-#btnMenu{
+.btnMenu{
   display: flex;
   text-align: center;
   color: white;
@@ -129,7 +129,8 @@ section{
 }
 
 main section article:hover .fa-truck{
-  transform: rotateZ(-120deg);
+  transition-duration: 3s;
+  transform: rotateZ(-90deg);
 }
 
 
@@ -169,6 +170,17 @@ ol{
   width: 40%;
 }
 
+
+@media (min-width: 1074px ){
+  main section article{
+    width: 20%;
+  }
+  header div.btnMenu{
+    width: 200px;
+  }
+
+  }  
+}
 
 
 /*  CSS para la pagina de Login   */
