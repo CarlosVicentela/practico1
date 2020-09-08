@@ -1,16 +1,76 @@
 body {
-  padding: 50px;
+  padding: 10px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   font-family: "Roboto";
   background: #ebebeb;
 }
 
+
+header {
+  background-color:#EAC926;
+}
 .container{
-  background: #ebebeb;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .logoML{
+  width: 45%;
+}
+
+.buscar buscar{
+    display: flex;
+    position: relative;
+    width: 100%;
+  
+}
+
+.buscar input{
+  width: 90%;
+  border-radius:5px;
+  height: 30px;
+}
+
+#imp-buscar{
+  font-size: 20px;
+}
+
+.buscar .fa-search{
+  position: relative;
+  right: 25px;
+  top: 0px;
+}
+
+#btnMenu{
+  display: flex;
+  text-align: center;
+  color: white;
+  margin:auto;
+  font-size: 40px;
+  width: 70px;
+  height: 70px;
+  background-color: blue;
+  border-radius:8px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+h4{
+  text-align: center;
+  font-size: 20px;
+}
+h4::before{
+	font-family:"Font Awesome 5 Free";
+	content:"\f4c0";
+  margin-right:8px;
+  padding: 1em 3px 30px 15px;
 }
 
 #banner{
-  width: 400px%;
+  width: 100%;
 }
 
 #img{
@@ -18,26 +78,18 @@ body {
   margin: auto;
 }
 
+
+
 ·P {
-  color: blackF;
+  color: black;
   font-size:12px;
 }
 
-header {
-   background-color:#EAC926;
-   width: 100%;
- }
-
-#baners{
+/* #baners{
   widows: 400px;;
 }
+ */
 
-h4::before{
-	font-family:"Font Awesome 5 Free";
-	content:"\f4c0";
-  margin-right:8px;
-  padding: 1em 3px 30px 15px;
-}
 
 h3::after{
   font-family:"Font Awesome 5 Free";
@@ -47,14 +99,39 @@ h3::after{
 }
 
 
+section{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
 .division{
   background:white ;
 }
 
 #camion{
   padding-left: 40px;
-   color:green
+  color:green;
+  background: white;
+  transition: width 8s;
 }
+
+#camion:hover {
+  width: 90%;
+  background: white;
+}
+
+.fa-truck{
+  left: 200px;
+}
+
+main section article:hover .fa-truck{
+  transform: rotateZ(-120deg);
+}
+
 
 ul{
   list-style: none;
@@ -87,20 +164,12 @@ ol{
   color: #217cdd;
 }
 
-#buscar{
+.buscar{
   margin-left: 5%;
-  height: 25px;
   width: 40%;
 }
 
 
-#btnMenu{
-  text-align: center;
-  color: blue;
-  margin:auto;
-  height: 40px;
-  width: 40px; 
-}
 
 /*  CSS para la pagina de Login   */
 div.centrar{
