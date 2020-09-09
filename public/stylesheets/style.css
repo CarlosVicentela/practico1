@@ -3,9 +3,7 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   font-family: "Roboto";
   background: #ebebeb;
-
 }
-
 
 header {
   background-color:#EAC926;
@@ -22,7 +20,7 @@ header {
 
 .buscar buscar{
     display: flex;
-    position: relative;
+    position: absolute;
     width: 100%;
 }
 
@@ -117,14 +115,14 @@ section{
 #camion{
   padding-left: 40px;
   color:green;
-  background: white;
-  transition: width 8s;
+  
 }
 
-#camion:hover {
+/*  #camion:hover {
   width: 90%;
   background: white;
 }
+*/
 
 article{
  /* 
@@ -139,26 +137,53 @@ article{
   position: relative;
 }
 
+.circulo-camion{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+}
+
+/*.circulo{
+  display: flex;
+  flex-wrap: wrap;
+  width: 30px;
+  height: 30px;
+  border: solid 1px green;
+  border-radius:100%;
+  position: relative;
+  top: 10px;
+  left: 10px;
+    
+}
+*/
 
 .fa-truck{
-  left: 200px;
+  color: green;
+  border: 1px solid green;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  padding: 5px; 
+  position: relative;
+  bottom: 15px;
+  left: 250px;
 }
 
 article{
   background-color: white;
-  transition: transform 5s;
+  transition: transform 2s;
 }
 
 article:hover{
-   transform: scale(1.5);
+   box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
-
 
 main section article:hover .fa-truck{
-  transition-duration: 3s;
+  transition-duration: 2s;
   transform: rotateZ(-90deg);
 }
-
 
 
 ul{
@@ -243,7 +268,7 @@ ol{
     display: none;
   }  
 }
-@media (min-width: 362px ) and ( max-width:1024px) {
+@media (min-width: 362px ) and ( max-width:769px) {
   main section article{
     width: 45%;
   }
@@ -251,7 +276,8 @@ ol{
     display: none;
   }  
 } 
-@media (min-width: 1025px ){
+
+@media (min-width: 770px ){
   main section article{
     width: 22%;
   }
