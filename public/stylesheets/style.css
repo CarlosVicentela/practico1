@@ -18,9 +18,9 @@ header {
   width: 45%;
 }
 
-.buscar buscar{
+.buscar {
     display: flex;
-    position: absolute;
+    position: relative;
     width: 100%;
 }
 
@@ -35,9 +35,9 @@ header {
 }
 
 .buscar .fa-search{
-  position: relative;
-  right: 25px;
-  top: 0px;
+  position: absolute;
+  right: 10%;
+  top: 12px;
 }
 
 .btnMenu{
@@ -75,6 +75,15 @@ h4::before{
   padding: 1em 3px 30px 15px;
 }
 
+
+.compras::after{
+  font-family:"Font Awesome 5 Free";
+	content:"\f291";
+ /*  margin-right:8px;
+  padding: 1em 3px 30px 15px; */
+}
+
+
 #banner{
   width: 100%;
 }
@@ -108,22 +117,6 @@ section{
 }
 
 
-.division{
-  background:white ;
-}
-
-#camion{
-  padding-left: 40px;
-  color:green;
-  
-}
-
-/*  #camion:hover {
-  width: 90%;
-  background: white;
-}
-*/
-
 article{
  /* 
    border: 1px solid grey;*/
@@ -136,40 +129,32 @@ article{
   background: white;
   position: relative;
 }
-
-.circulo-camion{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
-  position: absolute;
+ 
+.linea{
+   display: flex;
+   position: relative;
 }
 
-/*.circulo{
-  display: flex;
-  flex-wrap: wrap;
-  width: 30px;
-  height: 30px;
-  border: solid 1px green;
-  border-radius:100%;
-  position: relative;
-  top: 10px;
-  left: 10px;
-    
+linea::after,linea::before{
+  content: ""; 
+  width: 100%;
+  height: 1px;
+    position: absolute;
+  background-color: black;
 }
-*/
 
 .fa-truck{
   color: green;
-  border: 1px solid green;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
+  border-style: solid;
+  border: 1px solid green; width: 25px;
   border-radius: 100%;
-  padding: 5px; 
-  position: relative;
-  bottom: 15px;
-  left: 250px;
-}
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-left: 70%;
+ }
+
 
 article{
   background-color: white;
@@ -178,6 +163,11 @@ article{
 
 article:hover{
    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+   
+}
+
+main section article:hover .descripciones{
+  opacity: 1;
 }
 
 main section article:hover .fa-truck{
@@ -218,11 +208,14 @@ ol{
 .descripciones { 
   font-size: 16px;
   color:black;
+  padding-left: 5px;
+  opacity: 0;
 }
 
 .subtitulos{
-  font-size: 16px;
+  font-size: 18px;
   color:black;
+  font-weight: 500;
 }
 
 #color-icono{
@@ -252,6 +245,54 @@ ol{
   justify-content: space-around ;
   align-items: center;
 }
+
+footer section{
+  display: flex ;
+  flex-wrap: wrap;
+ 
+}
+
+footer section article{
+  display: flex ;
+  flex-wrap: wrap;
+  justify-content: center  ;
+  align-items: center;
+  width: 100%;
+  line-height: 12px;
+  padding-top:20px ;
+  padding-left: 10px;
+
+}
+.subtitulos{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 20px;
+  color:black;
+  font-weight: 900;
+}
+
+#copyright{
+  text-align: center;
+}
+
+.fa-credit-card{
+  color: blue  ;
+ font-size: 2em;
+}
+
+.fa-gift{
+  color: blue  ;
+  font-size: 2em;
+}
+.fa-user-shield{
+  color: blue  ;
+  font-size: 2em;
+}
+
+
 
 /* MEDIA QUERY PARA RESPONSIVE--------------------------------------------------*/
 @media (max-width: 361px ){
@@ -284,6 +325,10 @@ ol{
   header div.btnMenu{
     display: none;
   }  
+
+  footer section article{
+    width: 30%;
+  }
 }
 /*------------------------------------------------------------------------------*/
 
